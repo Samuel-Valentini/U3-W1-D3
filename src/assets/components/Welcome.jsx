@@ -9,7 +9,7 @@ const Welcome = () => {
                     variant={variant}
                     className="mt-3 text-center">
                     Welcome to the wonderful{" "}
-                    <Alert.Link href="#">EpiBook Shop</Alert.Link>.
+                    <Alert.Link href="#">EpiBooks Shop</Alert.Link>.
                 </Alert>
             ))}
         </>

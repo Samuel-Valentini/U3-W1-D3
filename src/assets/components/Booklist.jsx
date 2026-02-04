@@ -6,6 +6,7 @@ import { Component } from "react";
 class BookList extends Component {
     state = {
         search: "",
+        genre: "fantasy",
     };
 
     render() {
@@ -24,13 +25,13 @@ class BookList extends Component {
                         value={this.state.search}
                         onChange={(s) => {
                             this.setState({
+                                ...this.state,
                                 search: s.target.value,
                             });
                         }}
                     />
                 </div>
                 <br />
-
                 <Row className="h-100 ">
                     {newList.map((book) => {
                         return <SingleBook key={book.asin} book={book} />;
