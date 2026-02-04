@@ -12,7 +12,7 @@ const BookList = () => {
             {/* <GenresChoice /> */}
             <Row className="h-100 ">
                 {bookType.map((book) => {
-                    return SingleBook(book);
+                    return <SingleBook key={book.asin} book={book} />;
                 })}
             </Row>
         </>
