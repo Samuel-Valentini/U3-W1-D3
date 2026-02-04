@@ -44,8 +44,6 @@ class SingleBook extends Component {
                             this.setState({
                                 selected: !this.state.selected,
                             });
-
-                            console.log(this.state.selected);
                         }}
                     />
                     <Card.Body className="d-flex flex-column justify-content-between">
